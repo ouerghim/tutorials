@@ -1,6 +1,5 @@
 package com.baeldung.jobrunr;
 
-import org.awaitility.Awaitility;
 import org.jobrunr.jobs.states.StateName;
 import org.jobrunr.storage.StorageProvider;
 import org.junit.Test;

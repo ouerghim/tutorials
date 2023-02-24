@@ -1,15 +1,11 @@
 package com.baeldung.jobrunr;
 
 import com.baeldung.jobrunr.service.SampleJobService;
-import org.jobrunr.jobs.mappers.JobMapper;
 import org.jobrunr.scheduling.JobScheduler;
 import org.jobrunr.scheduling.cron.Cron;
-import org.jobrunr.storage.InMemoryStorageProvider;
-import org.jobrunr.storage.StorageProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import javax.annotation.PostConstruct;
 
@@ -23,15 +19,8 @@ public class JobRunrSpringBootApp {
         SpringApplication.run(JobRunrSpringBootApp.class, args);
     }
 
-    @Bean
-    public StorageProvider storageProvider(JobMapper jobMapper) {
-        InMemoryStorageProvider storageProvider = new InMemoryStorageProvider();
-        storageProvider.setJobMapper(jobMapper);
-        return storageProvider;
-    }
-
     @PostConstruct
     public void scheduleRecurrently() {
-        jobScheduler.<SampleJobService>scheduleRecurrently(x -> x.executeSampleJob("a recurring job"), Cron.every5minutes());
+        jobScheduler.<SampleJobService>scheduleRecurrently(Cron.every5minutes(), x -> x.executeSampleJob("a recurring job"));
     }
 }

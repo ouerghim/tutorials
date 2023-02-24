@@ -9,4 +9,6 @@ This module contains articles about Spring Web MVC in Spring Boot projects.
 - [Spring MVC Async vs Spring WebFlux](https://www.baeldung.com/spring-mvc-async-vs-webflux)
 - [Differences in @Valid and @Validated Annotations in Spring](https://www.baeldung.com/spring-valid-vs-validated)
 - [CharacterEncodingFilter In SpringBoot](https://www.baeldung.com/spring-boot-characterencodingfilter)
-- More articles: [[prev -->]](/spring-boot-modules/spring-boot-mvc-2)
+- [HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.com/spring-mvc-handlerinterceptor-vs-filter)
+- [ETags for REST with Spring](https://www.baeldung.com/etags-for-rest-with-spring)
+- More articles: [[<-- Prev]](/spring-boot-modules/spring-boot-mvc-2)[[Next -->]](/spring-boot-modules/spring-boot-mvc-4)

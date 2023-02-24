@@ -65,6 +65,11 @@ core-java-io/target_link.txt
 core-java/src/main/java/com/baeldung/manifest/MANIFEST.MF
 ethereum/logs/
 jmeter/src/main/resources/*-JMeter.csv
+jmeter/src/main/resources/*-Basic*.csv
+jmeter/src/main/resources/*-JMeter*.csv
+jmeter/src/main/resources/*ReportsDashboard*.csv
+jmeter/src/main/resources/dashboard/*ReportsDashboard*.csv
+
 ninja/devDb.mv.db
 
 **/node_modules/
@@ -89,5 +94,20 @@ testing-modules/report-*.json
 
 libraries-2/*.db
 
+apache-spark/data/output
+logs/
+libraries-data-io/*.docx
+persistence-modules/spring-hibernate-5/com.*
+spring-boot-modules/spring-boot-react/frontend/build
+spring-boot-modules/spring-boot-react/frontend/node
+spring-boot-modules/spring-boot-react/frontend/yarn.lock
+spring-boot-modules/spring-boot-properties-3/*.log
+
 # SDKMan
 .sdkmanrc
+
+# Localstack
+**/.localstack
+
+#web-modules/ninja
+devDb*.db
